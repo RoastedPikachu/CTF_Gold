@@ -1,0 +1,3 @@
+.headerLink {
+    @apply text-[#ffd78a] text-[1rem] font-["Druk_Wide_Cy_Web_Bold_Regular"] font-bold cursor-pointer outline-none;
+}
