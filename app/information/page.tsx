@@ -8,8 +8,8 @@ const Page = () => {
         <>
          <TheHeader/>
 
-          <main className="relative w-full h-[1840px] bg-[#1f1f1f]">
-            <section className="relative grid grid-rows-2 grid-cols-10 justify-items-stretch justify-between gap-[20px] mx-[5%] px-[10%] py-[50px] w-[90%] h-[850px] bg-[#111111] rounded-t-[30px]">
+          <main className="relative w-full h-[2370px] bg-[#1f1f1f]">
+            <section className="relative grid grid-rows-2 grid-cols-10 justify-items-stretch justify-between gap-[20px] mx-[2.5%] px-[12.5%] py-[50px] w-[95%] h-[850px] bg-[#111111] rounded-t-[30px]">
                 <div className="relative col-span-6 w-full h-[355px] rounded-[30px] overflow-hidden">
                     <img src="/static/InfoPage/GoldCTFTitleWithGoldBgImage.png" alt="Gold CTF" className="w-full h-full bg-cover"/>
                 </div>
@@ -74,6 +74,24 @@ const Page = () => {
 
                         <p className="goldRegularText"><a href="https://register.cbsctf.live" className="underline cursor-pointer outline-none">на сайте</a> или <br/> через <a href="https://t.me/cbsctf_regbot" className="underline cursor-pointer outline-none">телеграм-бота</a></p>
                     </span>
+                </div>
+            </section>
+
+            <section className="flex justify-center items-center mx-[2.5%] w-[95%] h-[120px] bg-[#111111] rounded-b-[30px]">
+                <h2 className="goldBoldText !text-[2rem]">Регламент</h2>
+            </section>
+
+            <section className="flex justify-between items-end pl-[22.5%] pr-[20%] w-full h-[400px]">
+                <div className="grid grid-rows-10 justify-items-center gap-y-[10px] h-[310px]">
+                    <h3 className="goldBoldText row-span-2 !text-[2rem]">Партнеры</h3>
+
+                    <img src="/static/InfoPage/logo/CBSLogo.png" alt="" className="row-span-8 w-[250px] h-[250px]"/>
+                </div>
+
+                <div className="grid grid-rows-10 justify-items-center gap-y-[10px] h-[310px]">
+                    <h3 className="goldBoldText row-span-2 !text-[2rem]">Организаторы</h3>
+
+                    <img src="/static/InfoPage/logo/IDKLogo.png" alt="" className="row-span-2 w-[250px] h-[250px]"/>
                 </div>
             </section>
           </main>

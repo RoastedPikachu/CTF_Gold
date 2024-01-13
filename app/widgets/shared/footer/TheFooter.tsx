@@ -6,7 +6,7 @@ import "./TheFooter.css";
 
 const TheFooter = () => {
     return (
-        <footer className="absolute grid justify-items-center grid-rows-3 gap-y-[50px] mt-[-310px] mx-[5%] py-[50px] w-[90%] h-[310px] bg-[#111111] rounded-t-[40px] z-20">
+        <footer className="absolute grid justify-items-center grid-rows-3 gap-y-[50px] mt-[-310px] mx-[2.5%] py-[50px] w-[95%] h-[310px] bg-[#111111] rounded-t-[40px] z-20">
             <h2 className="secondLevelTitle goldBoldText">Контакты</h2>
 
             <div className="flex justify-between items-center w-[60%] h-[25px]">
