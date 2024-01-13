@@ -1,39 +1,42 @@
 import React from 'react';
+
 import Link from "next/link";
+
+import "./TheFooter.css";
 
 const TheFooter = () => {
     return (
-        <footer className="relative grid justify-center mx-[5%] w-[90%] h-[310px] bg-[#111111] rounded-t-[40px]">
-            <h2>Контакты</h2>
+        <footer className="absolute grid justify-items-center grid-rows-3 gap-y-[50px] mt-[-310px] mx-[5%] py-[50px] w-[90%] h-[310px] bg-[#111111] rounded-t-[40px] z-20">
+            <h2 className="secondLevelTitle goldBoldText">Контакты</h2>
 
             <div className="flex justify-between items-center w-[60%] h-[25px]">
-                <span>
-                    <p>tg: </p>
+                <span className="flex">
+                    <p className="goldMediumText">tg: </p>
 
-                    <a href="https://t.me/deviantwish">@deviantwish</a>
+                    <a href="https://t.me/deviantwish" className="whiteLinkText">@deviantwish</a>
                 </span>
 
-                <span>
-                    <p>phone: </p>
+                <span className="flex">
+                    <p className="goldMediumText">phone: </p>
 
-                    <a href="tel:+7-495-640-53-30">+7(495)640-53-30</a>
+                    <a href="tel:+7-495-640-53-30" className="whiteLinkText">+7(495)640-53-30</a>
                 </span>
 
-                <span>
-                    <p>e-mail: </p>
+                <span className="flex">
+                    <p className="goldMediumText">e-mail: </p>
 
-                    <a href="mailto:info@aciso.ru">info@aciso.ru</a>
+                    <a href="mailto:info@aciso.ru" className="whiteLinkText">info@aciso.ru</a>
                 </span>
             </div>
 
             <div className="flex justify-between items-center w-[80%] h-[25px]">
-                <Link href="" className="headerLink">Информация</Link>
+                <Link href="/information" className="goldBoldText">Информация</Link>
 
-                <Link href="" className="headerLink">Регистрация</Link>
+                <Link href="" className="goldBoldText">Регистрация</Link>
 
-                <Link href="" className="headerLink">Цели</Link>
+                <Link href="" className="goldBoldText">Партнеры</Link>
 
-                <Link href="" className="headerLink">Контакты</Link>
+                <Link href="" className="goldBoldText">Контакты</Link>
             </div>
         </footer>
     );

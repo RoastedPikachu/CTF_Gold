@@ -1,4 +1,5 @@
 @import url(https://db.onlinewebfonts.com/c/0b5ecd0afcf95185925504cdca01f5e3?family=Druk+Wide+Cy+Web+Bold+Regular);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,4 +8,20 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+.secondLevelTitle {
+  @apply !text-[1.5rem];
+}
+
+.goldBoldText {
+  @apply text-[#ffd78a] text-[1rem] font-["Druk_Wide_Cy_Web_Bold_Regular"] font-bold cursor-pointer outline-none;
+}
+
+.goldMediumText {
+  @apply text-[#ffd78a] text-[1rem] font-["Montserrat"] font-medium cursor-pointer outline-none;
+}
+
+.whiteLinkText {
+  @apply ml-[10px] text-[#ffffff] text-[1rem] font-["Montserrat"] font-medium cursor-pointer outline-none;
 }

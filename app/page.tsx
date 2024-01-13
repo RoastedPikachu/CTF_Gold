@@ -8,11 +8,12 @@ export default function Home() {
     <>
       <TheHeader/>
 
-      <main className="h-[800px]">
-
+      <main className="relative w-full h-[2310px] overflow-y-hidden">
+        <img src="/static/MainBackgroundImage.png" alt="" className="mt-[-60px] w-[1550px] h-[2380px] z-10"/>
       </main>
 
       <TheFooter/>
     </>
   )
 }
+
