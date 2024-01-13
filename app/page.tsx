@@ -9,7 +9,7 @@ export default function Home() {
       <TheHeader/>
 
       <main className="relative w-full h-[2310px] overflow-y-hidden">
-        <img src="/static/MainBackgroundImage.png" alt="" className="mt-[-60px] w-[1550px] h-[2380px] z-10"/>
+        <img src="/static/MainPage/MainBackgroundImage.png" alt="" className="mt-[-60px] w-[1550px] h-[2380px] z-10"/>
       </main>
 
       <TheFooter/>
