@@ -1,14 +1,27 @@
-import React from 'react';
+"use client";
+import React, {useState, useEffect} from 'react';
+
+import useCountdownInterval from "@/app/customHooks";
 
 import TheHeader from "@/app/widgets/shared/header/TheHeader";
 import TheFooter from "@/app/widgets/shared/footer/TheFooter";
 
 const Page = () => {
+    const targetDate = new Date("Feb 1, 2024, 00:00:01").getTime();
+    const [timeLeft, setTimeLeft] = useState("Загрузка...");
+
+    useEffect(() => {
+        const countdownInterval = useCountdownInterval(setTimeLeft, targetDate);
+
+        return () => {
+            clearInterval(countdownInterval);
+        }
+    }, []);
     return (
         <>
          <TheHeader/>
 
-          <main className="relative w-full h-[2370px] bg-[#1f1f1f]">
+          <main className="relative w-full h-[2820px] bg-[#1f1f1f]">
             <section className="relative grid grid-rows-2 grid-cols-10 justify-items-stretch justify-between gap-[20px] mx-[2.5%] px-[12.5%] py-[50px] w-[95%] h-[850px] bg-[#111111] rounded-t-[30px]">
                 <div className="relative col-span-6 w-full h-[355px] rounded-[30px] overflow-hidden">
                     <img src="/static/InfoPage/GoldCTFTitleWithGoldBgImage.png" alt="Gold CTF" className="w-full h-full bg-cover"/>
@@ -33,7 +46,7 @@ const Page = () => {
                 <div className="relative grid grid-rows-2 justify-items-center col-span-4 gap-y-[150px] p-[32px] w-full h-[355px] bg-[#1f1f1f] rounded-[30px] overflow-hidden">
                     <img src="/static/InfoPage/GoldSphereImage.png" alt="" className="mt-[-10px] ml-[15px] w-full h-[260px] scale-x-[1.2] scale-y-[1.15]"/>
 
-                    <p className="goldBoldText !text-[2.375rem]">20:12:23</p>
+                    <p className="goldBoldText !text-[2.375rem]">{timeLeft}</p>
                 </div>
 
                 <div className="relative col-span-6 w-full h-[355px] rounded-[30px] overflow-hidden">
@@ -50,8 +63,6 @@ const Page = () => {
             </section>
 
             <section className="relative flex justify-items items-center px-[15%] pt-[50px] pb-[70px] w-full h-[680px] bg-[url('/static/InfoPage/GoldFoilBackgroundImage.png')] bg-cover rounded-[30px]">
-                {/*<img src="/static/InfoPage/GoldFoilBackgroundImage.png" alt="" className="absolute w-full h-full bg-cover"/>*/}
-
                 <div className="relative grid grid-rows-5 justify-items-stretch gap-y-[50px] px-[100px] py-[50px] w-full h-[560px] bg-[#1f1f1f] rounded-[30px]">
                     <h2 className="goldBoldText !text-[2rem]">Online</h2>
 
@@ -94,6 +105,8 @@ const Page = () => {
                     <img src="/static/InfoPage/logo/IDKLogo.png" alt="" className="row-span-2 w-[250px] h-[250px]"/>
                 </div>
             </section>
+
+            <img src="/static/InfoPage/GoldCTFAdamsHandsBackgroundImage.svg" alt="" className="mt-[-50px] w-full h-[550px] scale-[1.2]"/>
           </main>
 
           <TheFooter/>
