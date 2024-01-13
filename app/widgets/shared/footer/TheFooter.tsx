@@ -2,8 +2,6 @@ import React from 'react';
 
 import Link from "next/link";
 
-import "./TheFooter.css";
-
 const TheFooter = () => {
     return (
         <footer className="absolute grid justify-items-center grid-rows-3 gap-y-[50px] mt-[-310px] mx-[2.5%] py-[50px] w-[95%] h-[310px] bg-[#111111] rounded-t-[40px] z-20">

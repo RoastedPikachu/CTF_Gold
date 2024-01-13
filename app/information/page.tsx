@@ -1,22 +1,11 @@
-"use client";
-import React, {useState, useEffect} from 'react';
-
-import useCountdownInterval from "@/app/customHooks";
+import React from 'react';
 
 import TheHeader from "@/app/widgets/shared/header/TheHeader";
 import TheFooter from "@/app/widgets/shared/footer/TheFooter";
 
+import CountdownInterval from "@/app/widgets/shared/countdownInterval/CountdownInterval";
+
 const Page = () => {
-    const targetDate = new Date("Feb 1, 2024, 00:00:01").getTime();
-    const [timeLeft, setTimeLeft] = useState("Загрузка...");
-
-    useEffect(() => {
-        const countdownInterval = useCountdownInterval(setTimeLeft, targetDate);
-
-        return () => {
-            clearInterval(countdownInterval);
-        }
-    }, []);
     return (
         <>
          <TheHeader/>
@@ -46,7 +35,7 @@ const Page = () => {
                 <div className="relative grid grid-rows-2 justify-items-center col-span-4 gap-y-[150px] p-[32px] w-full h-[355px] bg-[#1f1f1f] rounded-[30px] overflow-hidden">
                     <img src="/static/InfoPage/GoldSphereImage.png" alt="" className="mt-[-10px] ml-[15px] w-full h-[260px] scale-x-[1.2] scale-y-[1.15]"/>
 
-                    <p className="goldBoldText !text-[2.375rem]">{timeLeft}</p>
+                    <CountdownInterval fontSize={"!text-[2.375rem]"}/>
                 </div>
 
                 <div className="relative col-span-6 w-full h-[355px] rounded-[30px] overflow-hidden">

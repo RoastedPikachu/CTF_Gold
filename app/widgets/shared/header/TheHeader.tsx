@@ -2,8 +2,6 @@ import React from 'react';
 
 import Link from 'next/link';
 
-import "./TheHeader.css";
-
 const TheHeader = () => {
     return (
         <header className="flex justify-between items-center px-[15%] w-full h-[120px] bg-[#1f1f1f] ">

@@ -9,5 +9,5 @@ export default function useCountdownInterval(setValueFunction: (value: string) =
         const minutesLeft = Math.floor((dateDistance % (1000 * 60 * 60)) / (1000 * 60));
 
         setValueFunction(`${daysLeft < 10 ? `0${daysLeft}` : daysLeft}:${hoursLeft < 10 ? `0${hoursLeft}` : hoursLeft}:${minutesLeft < 10 ? `0${minutesLeft}` : minutesLeft}`);
-    }, 1000);
+    }, 500);
 }
