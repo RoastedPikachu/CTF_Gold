@@ -16,8 +16,8 @@ const Page = () => {
         <>
          <TheHeader/>
 
-          <main className="relative w-full h-[2820px] mlarge:h-[3480px] bg-[#1f1f1f]">
-            <section className="relative grid mlarge:block grid-rows-2 grid-cols-10 justify-items-stretch justify-between gap-[20px] mx-[2.5%] mlarge:mx-0 px-[12.5%] mlarge:px-[7.5%] py-[50px] mlarge:py-[30px] w-[95%] mlarge:w-full h-[850px] mlarge:h-[1380px] bg-[#111111] rounded-t-[30px]">
+          <main className="relative w-full h-[2510px] mlarge:h-auto bg-[#1f1f1f] overflow-hidden">
+            <section className="relative grid mlarge:block grid-rows-2 grid-cols-10 justify-items-stretch justify-between gap-[20px] mt-[20px] mx-[2.5%] mlarge:mx-0 px-[12.5%] mlarge:px-[7.5%] py-[50px] mlarge:py-[30px] w-[95%] mlarge:w-full h-[850px] mlarge:h-[1440px] bg-[#111111] rounded-t-[30px]">
                 <div className="relative col-span-6 w-full h-[355px] mlarge:h-[220px] rounded-[30px] overflow-hidden">
                     <img src="/static/InfoPage/GoldCTFTitleWithGoldBgImage.png" alt="Gold CTF" className="w-full h-full bg-cover"/>
                 </div>
@@ -45,7 +45,7 @@ const Page = () => {
                 </div>
 
                 <div className="relative col-span-6 mlarge:mt-[20px] w-full h-[355px] mlarge:bg-[url('/static/InfoPage/background/BackgroundGoldSmartCityMobileImage.png')] mlarge:bg-cover rounded-[30px] overflow-hidden">
-                    {isMobile && <img src="/static/InfoPage/background/BackgroundGoldSmartCityImage.png" alt="" className="absolute w-full h-full z-10"/>}
+                    {!isMobile && <img src="/static/InfoPage/background/BackgroundGoldSmartCityImage.png" alt="" className="absolute w-full h-full z-10"/>}
 
                     <div className="mlarge:absolute mlarge:mx-[10%] mlarge:bottom-[50px] px-[35px] py-[20px] w-[calc(50%-20px)] mlarge:w-[80%] h-[125px] bg-[#1f1f1f] rounded-[30px] z-20">
                         <h3 className="goldBoldText !text-[1.25rem]">Умный город</h3>
@@ -57,7 +57,7 @@ const Page = () => {
                 </div>
             </section>
 
-            <section className="relative px-[15%] mlarge:px-[7.5%] pt-[50px] mlarge:pt-[30px] pb-[70px] mlarge:pb-[50px] w-full h-[680px] mlarge:h-[730px] bg-[url('/static/InfoPage/background/GoldFoilBackgroundImage.png')] bg-cover rounded-[30px]">
+            <section className="relative mlarge:mt-[-20px] px-[15%] mlarge:px-[7.5%] pt-[50px] mlarge:pt-[30px] pb-[70px] mlarge:pb-[50px] w-full h-[680px] mlarge:h-[730px] bg-[url('/static/InfoPage/background/GoldFoilBackgroundImage.png')] bg-cover rounded-[30px]">
                 <div className="relative grid mlarge:block grid-rows-5 justify-items-stretch gap-y-[50px] px-[100px] mlarge:px-[40px] py-[50px] mlarge:py-[20px] w-full h-[560px] mlarge:h-[630px] bg-[#1f1f1f] rounded-[30px]">
                     <h2 className="goldBoldText !text-[2rem]">Online</h2>
 
@@ -83,7 +83,7 @@ const Page = () => {
                 </div>
             </section>
 
-            <section className="flex justify-center items-center mx-[2.5%] mlarge:mx-0 w-[95%] mlarge:w-full h-[120px] bg-[#111111] rounded-b-[30px]">
+            <section className="flex justify-center items-center mlarge:mt-[-20px] mx-[2.5%] mlarge:mx-0 w-[95%] mlarge:w-full h-[120px] mlarge:h-[140px] bg-[#111111] rounded-b-[30px]">
                 <h2 className="goldBoldText !text-[2rem]">Регламент</h2>
             </section>
 
@@ -104,7 +104,7 @@ const Page = () => {
             <img src="/static/InfoPage/background/GoldCTFAdamsHandsBackgroundImage.svg" alt="" className="mt-[-50px] mlarge:mt-[-10px] w-full h-[550px] mlarge:h-[200px] scale-[1.2]"/>
           </main>
 
-          <TheFooter/>
+          <TheFooter position={"relative mlarge:mt-[-20px]"}/>
         </>
     );
 };

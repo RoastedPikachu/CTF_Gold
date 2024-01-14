@@ -2,12 +2,16 @@ import React from 'react';
 
 import Link from "next/link";
 
-const TheFooter = () => {
-    return (
-        <footer className="absolute grid justify-items-center grid-rows-3 gap-y-[50px] mt-[-310px] mx-[2.5%] py-[50px] w-[95%] h-[310px] bg-[#111111] rounded-t-[40px] z-20">
-            <h2 className="secondLevelTitle goldBoldText">Контакты</h2>
+interface TheFooterProps {
+    position: string;
+}
 
-            <div className="flex justify-between items-center w-[60%] h-[25px]">
+const TheFooter:React.FC<TheFooterProps> = ({position}) => {
+    return (
+        <footer className={`${position} grid mlarge:block justify-items-center grid-rows-3 gap-y-[50px] mx-[2.5%] mlarge:mx-0 py-[50px] w-[95%] mlarge:w-full h-[310px] mlarge:h-[600px] bg-[#111111] rounded-t-[40px] overflow-x-hidden z-20`}>
+            <h2 className="secondLevelTitle goldBoldText mlarge:text-center">Контакты</h2>
+
+            <div className="flex mlarge:grid mlarge:grid-rows-3 mlarge:justify-items-center justify-between mlarge:justify-center items-center mlarge:mt-[10px] mlarge:mx-[20%] w-[60%] h-[25px] mlarge:h-[200px]">
                 <span className="flex">
                     <p className="goldMediumText">tg: </p>
 
@@ -27,7 +31,7 @@ const TheFooter = () => {
                 </span>
             </div>
 
-            <div className="flex justify-between items-center w-[80%] h-[25px]">
+            <div className="flex mlarge:grid mlarge:grid-rows-4 mlarge:justify-items-center justify-between mlarge:justify-center items-center mlarge:mt-[40px] mlarge:mx-[10%] w-[80%] h-[25px] mlarge:h-[190px]">
                 <Link href="/information" className="goldBoldText">Информация</Link>
 
                 <Link href="" className="goldBoldText">Регистрация</Link>

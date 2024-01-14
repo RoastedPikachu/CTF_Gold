@@ -15,7 +15,7 @@ export default function Home() {
         <img src="/static/MainPage/MainBackgroundImage.png" alt="" className="mt-[-60px] w-[1550px] h-[2380px] z-10"/>
       </main>
 
-      <TheFooter/>
+      <TheFooter position={"absolute mt-[-310px]"}/>
     </>
   )
 }
