@@ -14,20 +14,41 @@ body {
   background-color: #1f1f1f;
 }
 
+.modalHeader-enter {
+  top: -110vh;
+  transition: 400ms ease;
+}
+.modalHeader-enter-active {
+  top: 0;
+  transition: 400ms ease;
+}
+.modalHeader-enter-done {
+  top: 0;
+  transition: 400ms ease;
+}
+.modalHeader-exit {
+  top: 0;
+  transition: 400ms ease;
+}
+.modalHeader-exit-active {
+  top: -110vh;
+  transition: 400ms ease;
+}
+
 .secondLevelTitle {
   @apply !text-[1.5rem];
 }
 
 .goldBoldText {
-  @apply text-[#ffd78a] font-["Druk_Wide_Cy_Web_Bold_Regular"] font-bold cursor-pointer outline-none;
+  @apply text-[#ffd78a] font-["Druk_Wide_Cy_Web_Bold_Regular"] font-bold outline-none;
 }
 
 .goldMediumText {
-  @apply text-[#ffd78a] font-["Montserrat"] font-medium cursor-pointer outline-none;
+  @apply text-[#ffd78a] font-["Montserrat"] font-medium outline-none;
 }
 
 .goldRegularText {
-  @apply text-[#ffd78a] font-["Montserrat"] font-normal cursor-pointer outline-none;
+  @apply text-[#ffd78a] font-["Montserrat"] font-normal outline-none;
 }
 
 .whiteLinkText {
