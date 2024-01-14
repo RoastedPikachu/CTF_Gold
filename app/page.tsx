@@ -13,7 +13,7 @@ export default function Home() {
         <CountdownInterval fontSize={"absolute mt-[620px] w-full !text-[7rem] text-center"}/>
 
         <img src="/static/MainPage/MainBackgroundImage.png" alt="" className="mt-[-60px] w-[1550px] h-[2380px] z-10"/>
-      </main>
+      </main>f
 
       <TheFooter position={"absolute mt-[-310px]"}/>
     </>

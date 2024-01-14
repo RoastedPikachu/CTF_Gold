@@ -19,15 +19,15 @@ body {
 }
 
 .goldBoldText {
-  @apply text-[#ffd78a] text-[1rem] font-["Druk_Wide_Cy_Web_Bold_Regular"] font-bold cursor-pointer outline-none;
+  @apply text-[#ffd78a] font-["Druk_Wide_Cy_Web_Bold_Regular"] font-bold cursor-pointer outline-none;
 }
 
 .goldMediumText {
-  @apply text-[#ffd78a] text-[1rem] font-["Montserrat"] font-medium cursor-pointer outline-none;
+  @apply text-[#ffd78a] font-["Montserrat"] font-medium cursor-pointer outline-none;
 }
 
 .goldRegularText {
-  @apply text-[#ffd78a] text-[1.5rem] font-["Montserrat"] font-normal cursor-pointer outline-none;
+  @apply text-[#ffd78a] font-["Montserrat"] font-normal cursor-pointer outline-none;
 }
 
 .whiteLinkText {
