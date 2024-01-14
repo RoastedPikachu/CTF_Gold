@@ -15,7 +15,7 @@ const TheHeader = () => {
         setIsMobile(window.matchMedia("(max-width: 480px)").matches);
     }, []);
     return (
-        <header className="relative flex justify-between items-center mlarge:items-end px-[15%] mlarge:px-0 w-full h-[120px] mlarge:h-[80px] bg-[#1f1f1f] overflow-x-hidden">
+        <header className="relative flex justify-between items-center px-[15%] mlarge:px-0 w-full h-[120px] mlarge:h-[80px] bg-[#1f1f1f] overflow-x-hidden">
             {!isMobile ? <>
                 <Link href="/" className="goldBoldText">Информация</Link>
 

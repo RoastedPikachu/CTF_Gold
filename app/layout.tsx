@@ -5,9 +5,9 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'CTF Gold',
-  description: 'Мероприятие ',
-  keywords: "CTF Gold, ctf gold, СТФ Голд, стф голд, CTF, СТФ, Attack/Defence, attack/defence, Аттак/Дефенс, аттак/дефенс"
+  title: 'Gold CTF',
+  description: 'Мероприятие Gold CTF',
+  keywords: "Gold CTF,  gold ctf, Голд СТФ, голд стф, CTF, СТФ, Attack/Defence, attack/defence, Атак/Дефенс, атак/дефенс"
 }
 
 export default function RootLayout({
