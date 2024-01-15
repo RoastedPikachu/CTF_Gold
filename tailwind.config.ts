@@ -16,7 +16,8 @@ const config: Config = {
       screens: {
         'mlarge': {'max': '480px'},
         'mmedium': {'max': '380px'},
-        'msmall': {'max': '320px'}
+        'msmall': {'max': '320px'},
+        'deskWide': {'min': '1560px'}
       }
     },
   },

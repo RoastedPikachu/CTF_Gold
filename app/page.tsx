@@ -16,7 +16,7 @@ const Home = () => {
         <>
             <TheHeader/>
 
-            <main className="relative w-full h-[2510px] mlarge:h-auto bg-[#1f1f1f] overflow-hidden">
+            <main className="relative deskWide:mx-[calc((100%-1440px)/2)] w-full max-w-[1440px] h-[2510px] mlarge:h-auto bg-[#1f1f1f] overflow-hidden">
                 <section className="relative grid mlarge:block grid-rows-2 grid-cols-10 justify-items-stretch justify-between gap-[20px] mx-[2.5%] mlarge:mx-0 px-[12.5%] mlarge:px-[7.5%] py-[50px] mlarge:py-[30px] w-[95%] mlarge:w-full h-[850px] mlarge:h-[1440px] mmedium:h-[1365px] bg-[#111111] rounded-t-[30px]">
                     <div className="relative col-span-6 w-full h-[355px] mlarge:h-[220px] rounded-[30px] overflow-hidden">
                         <img src="/static/InfoPage/GoldCTFTitleWithGoldBgImage.png" alt="Gold CTF" className="w-full h-full bg-cover"/>
