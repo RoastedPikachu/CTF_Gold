@@ -35,7 +35,7 @@ const TheHeader = () => {
                 classNames="modalHeader"
                 unmountOnExit
             >
-                <div ref={nodeRef} className="fixed px-[50px] py-[40px] w-full h-[100vh] bg-[#1f1f1f] border-[#ffd78a] border-b-2 ease-in-out z-20">
+                <div ref={nodeRef} className="fixed px-[50px] py-[40px] w-full h-[100vh] bg-[#1f1f1f] border-[#ffd78a] border-b-2 ease-in-out z-50">
                     <button onClick={() => setModalHeaderActive(false)} className="absolute flex justify-center items-center top-[30px] right-[25px] w-[60px] h-[60px] cursor-pointer outline-none">
                         <img src="/static/Header/XMarkIcon.svg" alt="Иконка закрытия выпадающего меню со ссылками на другие страницы" className="w-[50px] msmall:w-[40px] h-[50px] msmall:h-[40px]"/>
                     </button>
