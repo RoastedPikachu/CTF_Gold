@@ -1,4 +1,6 @@
-export default function useCountdownInterval(setValueFunction: (value: string) => void, targetDate: number) {
+import {useEffect, useState} from "react";
+
+export function useCountdownInterval(setValueFunction: (value: string) => void, targetDate: number) {
     return setInterval(() => {
         const currentDate = new Date().getTime();
 
@@ -11,3 +13,15 @@ export default function useCountdownInterval(setValueFunction: (value: string) =
         setValueFunction(`${daysLeft < 10 ? `0${daysLeft}` : daysLeft}:${hoursLeft < 10 ? `0${hoursLeft}` : hoursLeft}:${minutesLeft < 10 ? `0${minutesLeft}` : minutesLeft}`);
     }, 500);
 }
+
+export function useIsMobileDevice() {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        console.log('Render');
+        setIsMobile(window.matchMedia("(max-width: 480px)").matches);
+    }, []);
+
+    return isMobile;
+}
+

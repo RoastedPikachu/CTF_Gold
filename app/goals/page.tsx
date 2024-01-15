@@ -1,16 +1,15 @@
 "use client";
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
 import TheHeader from "@/app/widgets/shared/header/TheHeader";
 import TheFooter from "@/app/widgets/shared/footer/TheFooter";
+
+import {useIsMobileDevice} from "@/app/customHooks";
 import CountdownInterval from "@/app/widgets/shared/countdownInterval/CountdownInterval";
 
 export default function Page() {
-  const [isMobile, setIsMobile] = useState(false);
+  const isMobile = useIsMobileDevice();
 
-  useEffect(() => {
-      setIsMobile(window.matchMedia("(max-width: 480px)").matches);
-  }, []);
   return (
     <>
       <TheHeader/>
