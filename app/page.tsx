@@ -81,8 +81,8 @@ const Home = () => {
                     </div>
                 </section>
 
-                <section className="flex justify-center items-center mlarge:mt-[-20px] mx-[2.5%] mlarge:mx-0 w-[95%] mlarge:w-full h-[120px] mlarge:h-[140px] bg-[#111111] rounded-b-[30px]">
-                    <h2 className="goldBoldText text-[2rem] mmedium:text-[1.75rem]">Регламент</h2>
+                <section className="flex justify-center items-center mlarge:mt-[-20px] mx-[2.5%] mlarge:mx-0 w-[95%] mlarge:w-full h-[120px] mlarge:h-[180px] msmall:h-[160px] bg-[#111111] rounded-b-[30px]">
+                    <a href="https://docs.google.com/document/d/186qSE4ZS-1lYY2MWWY_OevjGI8OaOhojT6PbHvk7XHY/edit?usp=sharing" className="goldBoldText mlarge:mt-[10px] text-[2rem] mmedium:text-[1.75rem] msmall:text-[1.5rem] text-center outline-none">Регламент для очных команд</a>
                 </section>
 
                 <section className="flex mlarge:block justify-between items-end mlarge:mt-[50px] pl-[22.5%] mlarge:pl-0 pr-[20%] mlarge:pr-0 w-full h-[400px] mlarge:h-[700px]">
