@@ -18,7 +18,7 @@ const TheHeader = () => {
             {!isMobile ? <>
                 <Link href="/" className="goldBoldText">Информация</Link>
 
-                <Link href="" className="goldBoldText">Регистрация</Link>
+                <Link href="/#Registration" className="goldBoldText">Регистрация</Link>
 
                 <Link href="/goals" className="goldBoldText">Цели</Link>
 
@@ -43,7 +43,7 @@ const TheHeader = () => {
                     <div className="grid grid-rows-4 justify-items-start justify-start items-center mt-[-10px] h-[250px]">
                         <Link href="/" className="goldBoldText">Информация</Link>
 
-                        <Link href="" className="goldBoldText">Регистрация</Link>
+                        <Link href="/#Registration" className="goldBoldText">Регистрация</Link>
 
                         <Link href="/goals" className="goldBoldText">Цели</Link>
 

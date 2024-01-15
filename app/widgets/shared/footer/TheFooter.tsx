@@ -34,7 +34,7 @@ const TheFooter:React.FC<TheFooterProps> = ({position}) => {
             <div className="flex mlarge:grid mlarge:grid-rows-4 mlarge:justify-items-center justify-between mlarge:justify-center items-center mlarge:mt-[40px] mlarge:mx-[10%] w-[80%] h-[25px] mlarge:h-[190px]">
                 <Link href="/" className="goldBoldText">Информация</Link>
 
-                <Link href="" className="goldBoldText">Регистрация</Link>
+                <Link href="/#Registration" className="goldBoldText">Регистрация</Link>
 
                 <Link href="/goals" className="goldBoldText">Цели</Link>
 
