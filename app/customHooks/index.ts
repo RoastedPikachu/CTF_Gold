@@ -9,9 +9,10 @@ export function useCountdownInterval(setValueFunction: (value: string) => void, 
         const daysLeft = Math.floor(dateDistance / (1000 * 60 * 60 * 24));
         const hoursLeft = Math.floor((dateDistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutesLeft = Math.floor((dateDistance % (1000 * 60 * 60)) / (1000 * 60));
+        const secondsLeft = Math.floor((dateDistance % (1000 * 60)) / 1000);
 
-        setValueFunction(`${daysLeft < 10 ? `0${daysLeft}` : daysLeft}:${hoursLeft < 10 ? `0${hoursLeft}` : hoursLeft}:${minutesLeft < 10 ? `0${minutesLeft}` : minutesLeft}`);
-    }, 500);
+        setValueFunction(`${daysLeft < 10 ? `0${daysLeft}` : daysLeft}:${hoursLeft < 10 ? `0${hoursLeft}` : hoursLeft}:${minutesLeft < 10 ? `0${minutesLeft}` : minutesLeft}:${secondsLeft < 10 ? `0${secondsLeft}` : secondsLeft}`);
+    }, 1000);
 }
 
 export function useIsMobileDevice() {
