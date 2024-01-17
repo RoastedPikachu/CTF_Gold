@@ -5,7 +5,7 @@ import { CSSTransition } from "react-transition-group";
 
 import Link from 'next/link';
 
-import {useIsMobileDevice} from "@/app/customHooks";
+import {useIsMobileDevice} from "../../../../customHooks";
 
 const TheHeader = () => {
     let nodeRef = useRef(null);

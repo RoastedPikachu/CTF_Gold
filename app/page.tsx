@@ -4,7 +4,7 @@ import React from 'react';
 import TheHeader from "@/app/widgets/shared/header/TheHeader";
 import TheFooter from "@/app/widgets/shared/footer/TheFooter";
 
-import {useIsMobileDevice} from "@/app/customHooks";
+import {useIsMobileDevice} from "@/customHooks";
 import CountdownInterval from "@/app/widgets/shared/countdownInterval/CountdownInterval";
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
         <>
             <TheHeader/>
 
-            <main className="relative deskWide:mx-[calc((100%-1440px)/2)] w-full max-w-[1440px] h-[2510px] mlarge:h-auto bg-[#1f1f1f] overflow-hidden">
+            <main className="relative deskWide:mx-[calc((100%-1440px)/2)] w-full max-w-[1440px] h-auto mlarge:h-auto bg-[#1f1f1f] overflow-hidden">
                 <section className="relative grid mlarge:block grid-rows-2 grid-cols-10 justify-items-stretch justify-between gap-[20px] mx-[2.5%] mlarge:mx-0 px-[12.5%] mlarge:px-[7.5%] py-[50px] mlarge:py-[30px] w-[95%] mlarge:w-full h-[850px] mlarge:h-[1440px] mmedium:h-[1365px] msmall:h-[1215px] bg-[#111111] rounded-t-[30px]">
                     <div className="relative col-span-6 w-full h-[355px] mlarge:h-[220px] msmall:h-[200px] rounded-[30px] overflow-hidden">
                         <img src="/static/InfoPage/GoldCTFTitleWithGoldBgImage.png" alt="Gold CTF" className="w-full h-full bg-cover"/>
@@ -83,6 +83,24 @@ const Home = () => {
 
                 <section className="flex justify-center items-center mlarge:mt-[-20px] mx-[2.5%] mlarge:mx-0 w-[95%] mlarge:w-full h-[120px] mlarge:h-[180px] msmall:h-[160px] bg-[#111111] rounded-b-[30px]">
                     <a href="https://docs.google.com/document/d/186qSE4ZS-1lYY2MWWY_OevjGI8OaOhojT6PbHvk7XHY/edit?usp=sharing" className="goldBoldText mlarge:mt-[10px] text-[2rem] mmedium:text-[1.75rem] msmall:text-[1.5rem] text-center outline-none">Регламент для очных команд</a>
+                </section>
+
+                <section className="flex items-center mt-[60px] px-[15%] py-[80px] mlarge:mx-0 w-full mlarge:w-full h-[540px] mlarge:h-[180px] msmall:h-[160px] bg-[#111111] rounded-[30px]">
+                    <img src="/static/InfoPage/background/PrizeFundBackgroundImage.png" alt="" className="w-[65%] h-full"/>
+
+                    <div className="relative px-[30px] py-[30px] w-[35%] h-full bg-[#242424] rounded-[20px]">
+                        <div className="absolute flex justify-between items-center top-[30px] right-[30px] w-[27.5%] h-[25px]">
+                            <img src="/static/InfoPage/icon/StarIcon.svg" alt="" className="w-[25px] h-[25px]"/>
+
+                            <img src="/static/InfoPage/icon/GlobeIcon.svg" alt="" className="w-[25px] h-[25px]"/>
+
+                            <img src="/static/InfoPage/icon/RecycleIcon.svg" alt="" className="w-[25px] h-[25px]"/>
+                        </div>
+
+                        <h2 className="goldBoldText mt-[40px] text-[1.5rem] leading-[1.25]">Призовой <br/> фонд <br/> для очных <br/> команд</h2>
+
+                        <p className="goldMediumText mt-[30px] text-[1rem]">Каждый участник <br/> команды-победителя <br/> получит одну тройскую <br/> унцию золота 999 пробы <br/> на металлический счет</p>
+                    </div>
                 </section>
 
                 <section className="flex mlarge:block justify-between items-end mlarge:mt-[50px] pl-[22.5%] mlarge:pl-0 pr-[20%] mlarge:pr-0 w-full h-[400px] mlarge:h-[700px]">

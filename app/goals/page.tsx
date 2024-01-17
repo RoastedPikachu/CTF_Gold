@@ -4,7 +4,7 @@ import React from 'react';
 import TheHeader from "@/app/widgets/shared/header/TheHeader";
 import TheFooter from "@/app/widgets/shared/footer/TheFooter";
 
-import {useIsMobileDevice} from "@/app/customHooks";
+import {useIsMobileDevice} from "@/customHooks";
 import CountdownInterval from "@/app/widgets/shared/countdownInterval/CountdownInterval";
 
 export default function Page() {
