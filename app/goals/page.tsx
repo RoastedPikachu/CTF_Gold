@@ -14,7 +14,7 @@ export default function Page() {
     <>
       <TheHeader/>
 
-      <main className="relative deskWide:mx-[calc((100%-1440px)/2)] w-full max-w-[1440px] h-[2310px] mlarge:h-auto overflow-y-hidden">
+      <main className="relative deskWide:mx-[calc((100%-1440px)/2)] w-full max-w-[1440px] h-[2310px] mlarge:h-[1550px] overflow-y-hidden">
         <CountdownInterval fontSize={"absolute mt-[620px] mlarge:mt-[450px] mmedium:mt-[455px] msmall:mt-[460px] w-full text-[7rem] mlarge:text-[2.375rem] mmedium:text-[2.125rem] msmall:text-[1.75rem] text-center"}/>
 
         {!isMobile ?
