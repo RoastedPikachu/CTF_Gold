@@ -7,7 +7,7 @@ import TheFooter from "@/app/widgets/shared/footer/TheFooter";
 import {useIsMobileDevice} from "@/customHooks";
 import CountdownInterval from "@/app/widgets/shared/countdownInterval/CountdownInterval";
 
-const Home = () => {
+export default function Home() {
     const isMobile = useIsMobileDevice();
 
     return (
@@ -135,6 +135,4 @@ const Home = () => {
         </>
     );
 };
-
-export default Home;
 
