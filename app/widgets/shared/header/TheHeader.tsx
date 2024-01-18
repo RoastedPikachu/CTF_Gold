@@ -20,6 +20,8 @@ const TheHeader = () => {
 
                 <Link href="/#Registration" className="goldBoldText">Регистрация</Link>
 
+                <Link href="/#PrizeFund" className="goldBoldText">Призовой фонд</Link>
+
                 <Link href="/goals" className="goldBoldText">Цели</Link>
 
                 <Link href="" className="goldBoldText">Контакты</Link>
@@ -40,10 +42,12 @@ const TheHeader = () => {
                         <img src="/static/Header/XMarkIcon.svg" alt="Иконка закрытия выпадающего меню со ссылками на другие страницы" className="w-[50px] msmall:w-[40px] h-[50px] msmall:h-[40px]"/>
                     </button>
 
-                    <div className="grid grid-rows-4 justify-items-start justify-start items-center mt-[-10px] h-[250px]">
+                    <div className="grid grid-rows-5 justify-items-start justify-start items-center mt-[-10px] h-[300px]">
                         <Link href="/" className="goldBoldText">Информация</Link>
 
                         <Link href="/#Registration" className="goldBoldText">Регистрация</Link>
+
+                        <Link href="/#PrizeFund" className="goldBoldText">Призовой фонд</Link>
 
                         <Link href="/goals" className="goldBoldText">Цели</Link>
 

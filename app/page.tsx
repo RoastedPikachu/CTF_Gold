@@ -85,7 +85,7 @@ const Home = () => {
                     <a href="https://docs.google.com/document/d/186qSE4ZS-1lYY2MWWY_OevjGI8OaOhojT6PbHvk7XHY/edit?usp=sharing" className="goldBoldText mlarge:mt-[10px] text-[2rem] mmedium:text-[1.75rem] msmall:text-[1.5rem] text-center outline-none">Регламент для очных команд</a>
                 </section>
 
-                <section className="flex mlarge:block items-center mt-[60px] px-[15%] mlarge:px-[7.5%] py-[80px] mlarge:py-[40px] w-full mlarge:w-full h-[540px] mlarge:h-[760px] bg-[#111111] rounded-[40px]">
+                <section id="PrizeFund" className="flex mlarge:block items-center mt-[60px] px-[15%] mlarge:px-[7.5%] py-[80px] mlarge:py-[40px] w-full mlarge:w-full h-[540px] mlarge:h-[760px] bg-[#111111] rounded-[40px]">
                     {!isMobile ? <img src="/static/InfoPage/background/PrizeFundBackgroundImage.png" alt="" className="w-[65%] h-full"/> : <img src="/static/InfoPage/background/PrizeFundBackgroundMobileImage.png" alt="" className="w-full h-[280px]"/>}
 
                     <div className="relative px-[30px] py-[30px] w-[35%] mlarge:w-full h-full mlarge:h-[400px] bg-[#242424] rounded-[20px] mlarge:rounded-[30px]">
