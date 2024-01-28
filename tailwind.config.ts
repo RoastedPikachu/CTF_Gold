@@ -4,6 +4,7 @@ const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './widgets/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/shared/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
