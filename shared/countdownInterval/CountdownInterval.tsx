@@ -1,7 +1,7 @@
 "use client";
 import React, {useState, useEffect} from 'react';
 
-import {useCountdownInterval} from "../../../../customHooks";
+import {useCountdownInterval} from "@/customHooks";
 
 interface CountdownIntervalProps {
     fontSize: string

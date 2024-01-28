@@ -5,7 +5,7 @@ import { CSSTransition } from "react-transition-group";
 
 import Link from 'next/link';
 
-import {useIsMobileDevice} from "../../../../customHooks";
+import {useIsMobileDevice} from "@/customHooks";
 
 const TheHeader = () => {
     let nodeRef = useRef(null);
@@ -27,7 +27,7 @@ const TheHeader = () => {
                 <Link href="" className="goldBoldText">Контакты</Link>
             </> :
             <button onClick={() => setModalHeaderActive(true)} className="absolute right-[5%] w-[60px] h-[60px] cursor-pointer outline-none">
-                <img src="/static/Header/HamburgerIcon.svg" alt="Иконка выпадающего меню со ссылками на другие страницы" className="w-[50px] h-[50px]"/>
+                <img src="/Header/HamburgerIcon.svg" alt="Иконка выпадающего меню со ссылками на другие страницы" className="w-[50px] h-[50px]"/>
             </button>}
 
             <CSSTransition
@@ -39,7 +39,7 @@ const TheHeader = () => {
             >
                 <div ref={nodeRef} className="fixed px-[50px] py-[40px] w-full h-[100vh] bg-[#1f1f1f] border-[#ffd78a] border-b-2 ease-in-out z-50">
                     <button onClick={() => setModalHeaderActive(false)} className="absolute flex justify-center items-center top-[30px] right-[25px] w-[60px] h-[60px] cursor-pointer outline-none">
-                        <img src="/static/Header/XMarkIcon.svg" alt="Иконка закрытия выпадающего меню со ссылками на другие страницы" className="w-[50px] msmall:w-[40px] h-[50px] msmall:h-[40px]"/>
+                        <img src="/Header/XMarkIcon.svg" alt="Иконка закрытия выпадающего меню со ссылками на другие страницы" className="w-[50px] msmall:w-[40px] h-[50px] msmall:h-[40px]"/>
                     </button>
 
                     <div className="grid grid-rows-5 justify-items-start justify-start items-center mt-[-10px] h-[300px]">

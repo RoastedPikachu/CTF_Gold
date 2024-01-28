@@ -1,11 +1,11 @@
 "use client";
 import React from 'react';
 
-import TheHeader from "@/app/widgets/shared/header/TheHeader";
-import TheFooter from "@/app/widgets/shared/footer/TheFooter";
+import TheHeader from "@/widgets/header/TheHeader";
+import TheFooter from "@/widgets/footer/TheFooter";
 
 import {useIsMobileDevice} from "@/customHooks";
-import CountdownInterval from "@/app/widgets/shared/countdownInterval/CountdownInterval";
+import CountdownInterval from "@/shared/countdownInterval/CountdownInterval";
 
 const Page = () => {
   const isMobile = useIsMobileDevice();
